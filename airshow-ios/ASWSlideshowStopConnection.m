@@ -58,6 +58,8 @@
         if (statusCodeRef != 200) {
             NSCAssert(NO, @"invalid response");
         }
+        
+        CFRelease(messageRef);
 
         [sock disconnect];
     }

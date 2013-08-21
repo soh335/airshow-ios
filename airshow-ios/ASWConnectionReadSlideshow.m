@@ -40,6 +40,8 @@
             NSAssert(NO, @"invalid request");
         }
         
+        CFRelease(messageRef);
+        
         // write to apple tv
         NSData *data = [_delegate readSlideshowGetImage];
         NSData *body = [self getBinaryPlist:data];

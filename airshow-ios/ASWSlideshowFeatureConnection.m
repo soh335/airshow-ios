@@ -56,6 +56,8 @@
         
         NSDictionary *header = (NSDictionary *)CFBridgingRelease(CFHTTPMessageCopyAllHeaderFields(messageRef));
         
+        CFRelease(messageRef);
+        
         NSString *contentLength = header[@"Content-Length"];
         NSInteger contentLengthInt = contentLength.integerValue;
         [sock readDataToLength:contentLengthInt withTimeout:-1 tag:TAG_BODY];

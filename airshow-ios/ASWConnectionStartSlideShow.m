@@ -67,6 +67,8 @@
         if (!contentLength) {
             NSCAssert(NO, @"no content length");
         }
+        
+        CFRelease(messageRef);
     
         NSInteger contentLengthInt = contentLength.integerValue;
         [sock readDataToLength:contentLengthInt withTimeout:-1 tag:TAG_BODY];

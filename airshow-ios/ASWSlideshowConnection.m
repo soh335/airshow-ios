@@ -68,6 +68,7 @@
     if (tag == TAG_HEADER) {
         
         NSDictionary *header = (NSDictionary *)CFBridgingRelease(CFHTTPMessageCopyAllHeaderFields(messageRef));
+        CFRelease(messageRef);
         
         if ([header[@"Connection"] isEqualToString:@"Upgrade"]) {
             _startSlideShowConn = [[ASWConnectionStartSlideShow alloc] init];
