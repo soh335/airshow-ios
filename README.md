@@ -1,6 +1,6 @@
 # airshow-ios
 
-**it is alpha quority**
+**it is alpha quality**
 
 airshow is playing slideshow on appletv.
 if you want to play other site ( currently, default sites is only tumblr ), you can write source.
