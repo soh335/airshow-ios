@@ -19,6 +19,10 @@ ASWConfig.h should define "ASW_TUMBLR_API_KEY" macro, like this.
 #define ASW_TUMBLR_API_KEY @"xxxxxxxxxxxxxxxxxxx"
 ```
 
+## demo
+
+* https://vimeo.com/72829148
+
 ## require
 
 * cocoapods
