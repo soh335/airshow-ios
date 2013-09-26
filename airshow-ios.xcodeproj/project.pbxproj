@@ -445,6 +445,11 @@
 				CLASSPREFIX = ASW;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = soh335;
+				TargetAttributes = {
+					163B0E5817BDC37900490ED6 = {
+						DevelopmentTeam = 8SWD279Q6Q;
+					};
+				};
 			};
 			buildConfigurationList = 163B0E5417BDC37900490ED6 /* Build configuration list for PBXProject "airshow-ios" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -657,10 +662,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BB45A7710078448DBF2FA450 /* Pods/Pods.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "airshow-ios/airshow-ios-Prefix.pch";
 				INFOPLIST_FILE = "airshow-ios/airshow-ios-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -669,10 +678,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BB45A7710078448DBF2FA450 /* Pods/Pods.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "airshow-ios/airshow-ios-Prefix.pch";
 				INFOPLIST_FILE = "airshow-ios/airshow-ios-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
