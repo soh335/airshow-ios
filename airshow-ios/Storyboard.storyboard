@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="mlf-ZV-cBX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="mlf-ZV-cBX">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -23,35 +23,39 @@
         <scene sceneID="1b5-jr-Ja3">
             <objects>
                 <viewController id="SKu-ci-Qyw" customClass="ASWRootViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="12r-Md-MAo"/>
+                        <viewControllerLayoutGuide type="bottom" id="mJU-MY-hA3"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="l0j-qc-ibF">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" allowsSelectionDuringEditing="YES" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="RQa-aM-UUe">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelectionDuringEditing="YES" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="RQa-aM-UUe">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" textLabel="S6E-QX-f55" detailTextLabel="ajr-N8-8bt" style="IBUITableViewCellStyleSubtitle" id="RiP-dr-Ada">
-                                        <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="86" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="RiP-dr-Ada" id="Dsq-cR-iHV">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="S6E-QX-f55">
-                                                    <rect key="frame" x="10" y="2" width="38" height="22"/>
+                                                    <rect key="frame" x="15" y="2" width="36" height="22"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </label>
                                                 <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Detail" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ajr-N8-8bt">
-                                                    <rect key="frame" x="10" y="24" width="36" height="18"/>
+                                                    <rect key="frame" x="15" y="24" width="37" height="17"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </label>
                                             </subviews>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </view>
+                                        </tableViewCellContentView>
                                         <connections>
                                             <segue destination="fA2-3y-za3" kind="push" identifier="showSourceContainer" id="6EJ-SW-2I3"/>
                                         </connections>
@@ -65,10 +69,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="RQa-aM-UUe" firstAttribute="top" secondItem="l0j-qc-ibF" secondAttribute="top" type="default" id="3Nu-vS-QH6"/>
-                            <constraint firstItem="RQa-aM-UUe" firstAttribute="bottom" secondItem="l0j-qc-ibF" secondAttribute="bottom" type="default" id="6Xe-Fm-NEm"/>
-                            <constraint firstItem="RQa-aM-UUe" firstAttribute="leading" secondItem="l0j-qc-ibF" secondAttribute="leading" type="default" id="Lgd-yD-Xe4"/>
-                            <constraint firstItem="RQa-aM-UUe" firstAttribute="trailing" secondItem="l0j-qc-ibF" secondAttribute="trailing" type="default" id="waw-D4-WPO"/>
+                            <constraint firstItem="RQa-aM-UUe" firstAttribute="top" secondItem="l0j-qc-ibF" secondAttribute="top" id="3Nu-vS-QH6"/>
+                            <constraint firstItem="RQa-aM-UUe" firstAttribute="bottom" secondItem="l0j-qc-ibF" secondAttribute="bottom" id="6Xe-Fm-NEm"/>
+                            <constraint firstItem="RQa-aM-UUe" firstAttribute="leading" secondItem="l0j-qc-ibF" secondAttribute="leading" id="Lgd-yD-Xe4"/>
+                            <constraint firstItem="RQa-aM-UUe" firstAttribute="trailing" secondItem="l0j-qc-ibF" secondAttribute="trailing" id="waw-D4-WPO"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="YqN-b4-BrZ">
@@ -91,19 +95,18 @@
         <scene sceneID="rb0-ZP-Tki">
             <objects>
                 <tableViewController id="F9W-KK-eTM" customClass="ASWTableSourceViewController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="ApS-So-18U">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="ApS-So-18U">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="Yyh-a2-xUa">
-                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Yyh-a2-xUa" id="uPb-mo-mfx">
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </view>
+                                </tableViewCellContentView>
                                 <connections>
                                     <segue destination="fA2-3y-za3" kind="push" identifier="showSourceContainer" id="Cm9-xM-wcx"/>
                                 </connections>
@@ -124,11 +127,16 @@
         <scene sceneID="afB-vV-CZS">
             <objects>
                 <viewController id="fA2-3y-za3" customClass="ASWSourceContainerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="q2r-Kf-bUU"/>
+                        <viewControllerLayoutGuide type="bottom" id="4YK-aK-zAV"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="RJP-Hg-3Bw">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v6U-aS-DRQ">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
                                 <items>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="t3j-s2-3mh"/>
                                     <barButtonItem style="plain" systemItem="search" id="usv-fG-0xz">
@@ -141,9 +149,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="v6U-aS-DRQ" firstAttribute="trailing" secondItem="RJP-Hg-3Bw" secondAttribute="trailing" type="default" id="2D5-dM-0dz"/>
-                            <constraint firstItem="v6U-aS-DRQ" firstAttribute="bottom" secondItem="RJP-Hg-3Bw" secondAttribute="bottom" type="default" id="AdK-3s-zPL"/>
-                            <constraint firstItem="v6U-aS-DRQ" firstAttribute="leading" secondItem="RJP-Hg-3Bw" secondAttribute="leading" type="default" id="ex7-H1-gvV"/>
+                            <constraint firstItem="v6U-aS-DRQ" firstAttribute="trailing" secondItem="RJP-Hg-3Bw" secondAttribute="trailing" id="2D5-dM-0dz"/>
+                            <constraint firstItem="v6U-aS-DRQ" firstAttribute="bottom" secondItem="RJP-Hg-3Bw" secondAttribute="bottom" id="AdK-3s-zPL"/>
+                            <constraint firstItem="v6U-aS-DRQ" firstAttribute="leading" secondItem="RJP-Hg-3Bw" secondAttribute="leading" id="ex7-H1-gvV"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Vak-cD-KOC">
@@ -165,21 +173,25 @@
         <scene sceneID="MIU-74-AkB">
             <objects>
                 <viewController id="O83-Vo-2Bc" customClass="ASWSlideshowFeatureTableViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DbT-WC-Gja"/>
+                        <viewControllerLayoutGuide type="bottom" id="2iy-3s-zBF"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="cke-Gb-aUj">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="5cM-bx-ACt">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="5cM-bx-ACt">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="detailDisclosureButton" indentationWidth="10" reuseIdentifier="Cell" id="niX-lU-XSB">
-                                        <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="86" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="niX-lU-XSB" id="I51-F2-gcU">
+                                            <rect key="frame" x="0.0" y="0.0" width="253" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </view>
+                                        </tableViewCellContentView>
                                         <connections>
                                             <segue destination="hbe-q4-QrX" kind="modal" identifier="showPlayController" modalTransitionStyle="crossDissolve" id="Dsc-oB-Ood"/>
                                         </connections>
@@ -193,10 +205,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="5cM-bx-ACt" firstAttribute="bottom" secondItem="cke-Gb-aUj" secondAttribute="bottom" type="default" id="2NU-RV-WWd"/>
-                            <constraint firstItem="5cM-bx-ACt" firstAttribute="leading" secondItem="cke-Gb-aUj" secondAttribute="leading" type="default" id="j6u-HM-o6G"/>
-                            <constraint firstItem="5cM-bx-ACt" firstAttribute="trailing" secondItem="cke-Gb-aUj" secondAttribute="trailing" type="default" id="lAI-zH-ss2"/>
-                            <constraint firstItem="5cM-bx-ACt" firstAttribute="top" secondItem="cke-Gb-aUj" secondAttribute="top" type="default" id="lQe-LF-wE8"/>
+                            <constraint firstItem="5cM-bx-ACt" firstAttribute="bottom" secondItem="cke-Gb-aUj" secondAttribute="bottom" id="2NU-RV-WWd"/>
+                            <constraint firstItem="5cM-bx-ACt" firstAttribute="leading" secondItem="cke-Gb-aUj" secondAttribute="leading" id="j6u-HM-o6G"/>
+                            <constraint firstItem="5cM-bx-ACt" firstAttribute="trailing" secondItem="cke-Gb-aUj" secondAttribute="trailing" id="lAI-zH-ss2"/>
+                            <constraint firstItem="5cM-bx-ACt" firstAttribute="top" secondItem="cke-Gb-aUj" secondAttribute="top" id="lQe-LF-wE8"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="zjm-z4-E9V"/>
@@ -212,11 +224,16 @@
         <scene sceneID="cwz-2A-2oT">
             <objects>
                 <viewController id="hbe-q4-QrX" customClass="ASWPlayViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lLb-fe-FXv"/>
+                        <viewControllerLayoutGuide type="bottom" id="AFX-bl-Qnz"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8ac-Jh-e3m">
-                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="let's airshow" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="75A-GP-bHb">
+                                <rect key="frame" x="112" y="263" width="97" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -224,7 +241,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="75A-GP-bHb" firstAttribute="centerX" secondItem="8ac-Jh-e3m" secondAttribute="centerX" type="default" id="aq2-7p-kMG"/>
+                            <constraint firstItem="75A-GP-bHb" firstAttribute="centerX" secondItem="8ac-Jh-e3m" secondAttribute="centerX" id="aq2-7p-kMG"/>
                             <constraint firstItem="75A-GP-bHb" firstAttribute="top" secondItem="8ac-Jh-e3m" secondAttribute="top" constant="263" id="bOG-KG-84m"/>
                         </constraints>
                     </view>
@@ -234,36 +251,6 @@
             <point key="canvasLocation" x="1400" y="-685"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="ASWPlayViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ASWPlayViewController.h"/>
-        </class>
-        <class className="ASWRootViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ASWRootViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
-            </relationships>
-        </class>
-        <class className="ASWSlideshowFeatureTableViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ASWSlideshowFeatureTableViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
-            </relationships>
-        </class>
-        <class className="ASWSourceContainerViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ASWSourceContainerViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="searchButtonPressed:"/>
-                <relationship kind="outlet" name="playButton" candidateClass="UIBarButtonItem"/>
-            </relationships>
-        </class>
-        <class className="ASWTableSourceViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ASWTableSourceViewController.h"/>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
